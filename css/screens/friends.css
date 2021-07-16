@@ -1,0 +1,19 @@
+#friends-display-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 16px;
+}
+#friends-display-link ion-icon {
+  color: rgba(0, 0, 0, 0.3);
+}
+#friends-display-link ion-icon:first-child {
+  font-size: 18px;
+  margin-right: 3px;
+}
+#friends-display-link ion-icon:last-child {
+  font-size: 14px;
+  margin-left: 3px;
+}
