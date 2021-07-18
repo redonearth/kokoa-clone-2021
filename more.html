@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Find - Kokoa Clone</title>
+    <title>More - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -24,9 +24,10 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Find</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><ion-icon name="search-outline"></ion-icon></span>
+        <span><ion-icon name="musical-notes-outline"></ion-icon></span>
         <span>
           <div class="badge badge--dot"></div>
           <ion-icon name="cog-outline"></ion-icon>
@@ -34,60 +35,63 @@
       </div>
     </header>
 
-    <main class="main-screen">
+    <main class="main-screen more-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://avatars.githubusercontent.com/u/18129936"
+            class="user-component__avatar user-component__avatar--xl"
+            alt="Avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__username">Redonearth</h4>
+            <h4 class="user-component__state-message">
+              +82 10-2013-0613 <ion-icon name="alert-circle-outline"></ion-icon>
+            </h4>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <ion-icon name="chatbox-outline"></ion-icon>
+        </div>
+      </div>
+
       <div class="icon-row">
         <div class="icon-row__icon">
-          <ion-icon name="scan-outline"></ion-icon>
-          <span>QR Code</span>
+          <ion-icon name="calendar-outline"></ion-icon>
+          <span>Calendar</span>
         </div>
         <div class="icon-row__icon">
-          <ion-icon name="people-circle-outline"></ion-icon>
-          <span>Add by Contacts</span>
+          <ion-icon name="albums-outline"></ion-icon>
+          <span>Talk Drive</span>
         </div>
         <div class="icon-row__icon">
-          <ion-icon name="id-card-outline"></ion-icon>
-          <span>Add by ID</span>
+          <ion-icon name="happy-outline"></ion-icon>
+          <span>Emoticons</span>
         </div>
         <div class="icon-row__icon">
-          <ion-icon name="mail-outline"></ion-icon>
-          <span>Invite</span>
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <span>Account</span>
         </div>
       </div>
 
-      <div class="recommended-friends">
-        <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends.</span>
-      </div>
-
-      <div class="open-chat">
-        <div class="open-chat__header">
-          <h4 class="open-chat__title">Open Chat</h4>
-          <span>
-            Go to Openchat Home
-            <ion-icon name="chevron-forward-outline"></ion-icon>
-          </span>
-        </div>
-        <div class="open-chat-room">
-          <div class="open-chat-room__column">
-            <h5 class="open-chat-room__title">#BTS</h5>
-            <h6 class="open-chat-room__hashtags">#bts#army#friends</h6>
-            <div class="open-chat-room__members">
-              <img
-                src="https://avatars.githubusercontent.com/u/18129936"
-                alt="Host Avatar"
-              />
-              <span class="open-chat-room__member-count">802 members</span>
-              <div class="divider"></div>
-              <span class="open-chat-room__member-status">Active</span>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <ion-icon name="shapes"></ion-icon>
             </div>
+            <span class="more-suggestions__icon-text">Kokoa Story</span>
           </div>
-          <div class="open-chat-room__column">
-            <div class="open-chat-room__photo">
-              <img src="images/bts-army_400x400.jpg" alt="Open Chat Photo" />
-              <div class="open-chat-room__heart-count">
-                <ion-icon name="heart"></ion-icon> <span>901</span>
-              </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <ion-icon name="terminal"></ion-icon>
             </div>
+            <span class="more-suggestions__icon-text">Kokoa Terminal</span>
           </div>
         </div>
       </div>
