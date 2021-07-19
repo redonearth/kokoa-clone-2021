@@ -32,6 +32,10 @@
   display: flex;
   width: 100%;
   font-size: 14px;
+  /* margin-bottom: 25px; */
+}
+.chat-row:last-child {
+  margin-top: 25px;
 }
 .chat-row img {
   width: 44px;
@@ -47,7 +51,7 @@
   display: flex;
   align-items: flex-end;
 }
-.chat__message {
+.chat__bubble {
   background-color: white;
   padding: 14px 12px;
   border-radius: 12px;
@@ -60,4 +64,18 @@
 }
 .chat__time {
   font-size: 12px;
+}
+
+.chat-row--own {
+  justify-content: flex-end;
+}
+.chat-row--own .chat__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+.chat-row--own .chat__content {
+  flex-direction: row-reverse;
 }
