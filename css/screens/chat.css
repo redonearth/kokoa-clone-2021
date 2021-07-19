@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #9fc7b5;
-  height: 1000vh;
+  height: 500vh;
 }
 #chat-screen .status-bar,
 #chat-screen .alt-screen-header {
@@ -13,11 +13,23 @@
   top: 40px;
 }
 
+@keyframes fadeInAnimation {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 135px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeInAnimation 0.5s linear;
 }
 
 .chat__timestamp {
@@ -89,6 +101,7 @@
   justify-content: space-between;
   padding: 5px 25px;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 .reply__column {
   display: flex;
@@ -102,10 +115,11 @@
   position: relative;
 }
 .reply input {
-  padding: 10px;
+  padding: 10px 20px;
   width: 100%;
   border: var(--border);
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 .reply__column > ion-icon {
   font-size: 24px;
@@ -135,4 +149,22 @@
 }
 .reply__column button ion-icon {
   font-size: 20px;
+}
+
+.reply .reply__column:first-child,
+.reply ion-icon[name^='happy'],
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within ion-icon[name^='happy'],
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply:focus-within input {
+  min-width: 98vw;
+  transform: translateX(-12%) translateY(-80px);
+}
+.reply:focus-within {
+  transform: translateY(80px);
 }
