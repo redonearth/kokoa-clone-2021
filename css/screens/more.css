@@ -12,10 +12,14 @@
 }
 .more-screen .icon-row {
   margin-top: 35px;
+  flex-wrap: wrap;
+}
+.more-screen .icon-row__icon {
+  flex: 0 1 calc((100% / 4) - 25px);
+  padding-bottom: 25px;
 }
 
 .more-suggestions {
-  margin-top: 25px;
   border-top: var(--border);
   padding-top: 40px;
 }
