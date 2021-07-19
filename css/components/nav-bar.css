@@ -19,6 +19,18 @@
   color: #2e363e;
 }
 
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(60deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .nav__notification,
 .nav__notification-dot {
   position: absolute;
@@ -28,8 +40,34 @@
   bottom: 12px;
   z-index: 10;
   font-size: 12px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 .nav__notification-dot {
   left: 25px;
   bottom: 25px;
+}
+
+@keyframes appearNavItemAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav__item {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: appearNavItemAnimation 0.3s ease-in-out forwards;
+}
+.nav__item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav__item:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.nav__item:last-child {
+  animation-delay: 0.7s;
 }
