@@ -121,6 +121,9 @@
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
 }
+.reply input::placeholder {
+  font-size: 16px;
+}
 .reply__column > ion-icon {
   font-size: 24px;
   opacity: 0.5;
@@ -167,4 +170,16 @@
 }
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+@media screen and (min-width: 645px) {
+  #chat-screen {
+    height: 100vh;
+  }
+  #chat-screen .status-bar,
+  #chat-screen .alt-screen-header,
+  .main-chat,
+  .reply {
+    display: none;
+  }
 }
