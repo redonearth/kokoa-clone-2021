@@ -20,6 +20,10 @@
 @import 'screens/settings.css';
 @import 'screens/chat.css';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Gothic A1', sans-serif;
   color: #2e363e;
