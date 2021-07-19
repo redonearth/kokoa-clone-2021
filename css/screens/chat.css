@@ -79,3 +79,60 @@
 .chat-row--own .chat__content {
   flex-direction: row-reverse;
 }
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+}
+.reply__column {
+  display: flex;
+  align-items: center;
+}
+.reply__column:first-child {
+  width: 10%;
+}
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border: var(--border);
+  border-radius: 20px;
+}
+.reply__column > ion-icon {
+  font-size: 24px;
+  opacity: 0.5;
+}
+.reply__column:last-child > ion-icon,
+.reply__column:last-child button {
+  position: absolute;
+  right: 4px;
+}
+.reply__column:last-child > ion-icon {
+  right: 40px;
+}
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+.reply__column button ion-icon {
+  font-size: 20px;
+}
