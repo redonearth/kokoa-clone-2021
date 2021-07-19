@@ -93,3 +93,23 @@
   margin-left: 3px;
   font-size: 12px;
 }
+
+@keyframes heartBeatAnimation {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-chat-room__heart-count:hover ion-icon {
+  will-change: transform;
+  animation: heartBeatAnimation 1s linear infinite;
+}
